@@ -1,0 +1,7 @@
+<div class="card">
+    <img class="card-img-top" [src]="recipe.thumbnail" (error)="img.src = imgError" alt="Card image cap" #img>
+    <div class="card-body">
+      <h5 class="card-title">{{recipe.title}}</h5>
+      <p class="card-text capitalize">{{recipe.ingredients}}</p>
+    </div>
+  </div>
